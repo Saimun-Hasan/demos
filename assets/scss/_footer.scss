@@ -2,22 +2,22 @@
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: darken($secondary, 2);
+  background: darken($secondary, 30);
   padding: 0 0 30px 0;
   color: $white;
   font-size: 14px;
 
 
   .footer-top {
-    background: $secondary;
-    border-bottom: 1px solid lighten($secondary, 5);
+    background: darken($secondary, 12);
+    border-bottom: 1px solid darken($secondary, 5);
     padding: 60px 0 30px 0;
 
     .footer-info {
       margin-bottom: 30px;
       h3 {
-        font-size: 28px;
-        margin: 0 0 15px 0;
+        font-size: 24px;
+        margin: 0 0 20px 0;
         padding: 2px 0 2px 0;
         line-height: 1;
         font-weight: 700;
@@ -36,12 +36,12 @@
       a {
         font-size: 18px;
         display: inline-block;
-        background: rgba($white, .08);
+        background: darken($secondary, 3);
         color: $white;
         line-height: 1;
         padding: 8px 0;
         margin-right: 4px;
-        border-radius: 4px;
+        border-radius: 50%;
         text-align: center;
         width: 36px;
         height: 36px;
@@ -71,7 +71,7 @@
 
         i {
           padding-right: 2px;
-          color: lighten($primary, 5);
+          color: lighten($primary, 20);
           font-size: 18px;
           line-height: 1;
         }
@@ -91,7 +91,7 @@
           display: inline-block;
           line-height: 1;
           &:hover {
-            color: $primary;
+            color: lighten($primary, 15);
           }
         }
       }
@@ -104,7 +104,7 @@
         background: #fff;
         padding: 6px 10px;
         position: relative;
-        border-radius: 4px;
+        border-radius: 4px 0 0 4px;
   
         input[type="email"] {
           border: 0;
@@ -114,7 +114,7 @@
         input[type="submit"] {
           position: absolute;
           top: 0;
-          right: -2px;
+          right: -4px;
           bottom: 0;
           border: 0;
           background: none;
@@ -125,7 +125,7 @@
           transition: 0.3s;
           border-radius: 0 4px 4px 0;
           &:hover {
-            background: lighten($primary, 5);
+            background: darken($primary, 10%);
           }
         }
       }
@@ -143,8 +143,5 @@
     text-align: center;
     font-size: 13px;
     color: $white;
-    a {
-      transition: 0.3s;
-    }
   }
 }

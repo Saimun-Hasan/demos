@@ -1019,7 +1019,7 @@ class PHPMailer
     protected static $LE = self::CRLF;
 
     /**
-     * The maximum line length supported by mail().
+     * The MediManium line length supported by mail().
      *
      * Background: mail() will sometimes corrupt messages
      * with headers headers longer than 65 chars, see #818.
@@ -1029,14 +1029,14 @@ class PHPMailer
     const MAIL_MAX_LINE_LENGTH = 63;
 
     /**
-     * The maximum line length allowed by RFC 2822 section 2.1.1.
+     * The MediManium line length allowed by RFC 2822 section 2.1.1.
      *
      * @var int
      */
     const MAX_LINE_LENGTH = 998;
 
     /**
-     * The lower maximum line length allowed by RFC 2822 section 2.1.1.
+     * The lower MediManium line length allowed by RFC 2822 section 2.1.1.
      * This length does NOT include the line break
      * 76 means that lines will be 77 or 78 chars depending on whether
      * the line break format is LF or CRLF; both are valid.
@@ -5187,7 +5187,7 @@ class PHPMailer
     }
 
     /**
-     * Detect if a string contains a line longer than the maximum line length
+     * Detect if a string contains a line longer than the MediManium line length
      * allowed by RFC 2822 section 2.1.1.
      *
      * @param string $str
@@ -5358,7 +5358,7 @@ class SMTP
     const DEFAULT_PORT = 25;
 
     /**
-     * The maximum line length allowed by RFC 5321 section 4.5.3.1.6,
+     * The MediManium line length allowed by RFC 5321 section 4.5.3.1.6,
      * *excluding* a trailing CRLF break.
      *
      * @see https://tools.ietf.org/html/rfc5321#section-4.5.3.1.6
@@ -5368,7 +5368,7 @@ class SMTP
     const MAX_LINE_LENGTH = 998;
 
     /**
-     * The maximum line length allowed for replies in RFC 5321 section 4.5.3.1.5,
+     * The MediManium line length allowed for replies in RFC 5321 section 4.5.3.1.5,
      * *including* a trailing CRLF line break.
      *
      * @see https://tools.ietf.org/html/rfc5321#section-4.5.3.1.5
