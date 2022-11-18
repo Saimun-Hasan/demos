@@ -22,6 +22,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -31,147 +32,234 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo_2.png" alt="" class="img-fluid"></a>
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <div class="col-lg-8 offset-lg-2 col-12">
+               <h2 class="animate__animated animate__fadeInDown">Welcome To MediMani</span></h2>
+               <p class="animate__animated animate__fadeInUp">A Medical Spa at the forefront!</p>
+               <a href="javascript:void(0)" class="btn-get-started animate__animated animate__fadeInUp scrollto">Book An Appointment</a> 
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <div class="col-lg-5 offset-lg-7 col-12">
+               <h2 class="animate__animated animate__fadeInDown">SPA La La La La Is Coming Soon!</h2>
+               <p class="animate__animated animate__fadeInUp">Monday, November 28</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <div class="col-lg-5 col-12">
+              <h2 class="animate__animated animate__fadeInDown">Did Someone Say Big Sale?</h2>
+              <p class="animate__animated animate__fadeInUp">It's Here, The Year's Biggest CoolSculpting Sale.</p>
+              <a class="btn-get-started animate__animated animate__fadeInUp" onclick=" window.open('https://rtpmedsol.rtpdemo.com/demoforms/survey', '_blank'); return false;">Take A Look</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <!-- <li class="dropdown"><a href="javascript:void(0)"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="javascript:void(0)">Drop Down 1</a></li>
-              <li class="dropdown"><a href="javascript:void(0)"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="javascript:void(0)">Deep Drop Down 1</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 2</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 3</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 4</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="javascript:void(0)">Drop Down 2</a></li>
-              <li><a href="javascript:void(0)">Drop Down 3</a></li>
-              <li><a href="javascript:void(0)">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
 
-    </div>
-  </header><!-- End Header -->
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="container text-center text-md-left" data-aos="fade-up">
-      <h1>Welcome to MediMani</h1>
-      <h2>A Medical Spa Franchise that is at the forefront of the business</h2>
-      <a href="javascript:void(0)" class="btn-get-started scrollto">CALL US</a>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section class="about">
       <div class="container">
 
-        <div class="row">
-          <div class="col-xl-6 col-lg-7" data-aos="fade-right">
-            <img src="assets/img/hero-bg_3.jpg" class="img-fluid" alt="">
+        <div class="row two-side-row">
+
+          <div class="col-lg-7 order-lg-1 order-md-1 order-1 text-center custom-img-index" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/hero-bg_4.jpg" class="img-fluid img-border" alt="">
           </div>
-          <div class="col-xl-6 col-lg-5 pt-5 pt-lg-0">
-            <h3 data-aos="fade-up">Why Choose <span style="color: #02A551; font-weight:600">MediMani?</span></h3>
+  
+          <div class="col-lg-5 order-lg-2 order-md-2 order-2 content-side custom-title-index" data-aos="zoom-in" data-aos-delay="100" style="text-align: left">
+            
+            <h3 data-aos="fade-up">About Us</h3>
             <p data-aos="fade-up">
-              There are many reasons to choose MediMani for your beauty needs. 
-              We offer a wide range of services that can help you look and feel your best.
+              Welcome to Medi-Mani, where helping you enhance and maintain your most beautiful and healthy skin is our 
+              number one priority. Our spa has been specifically designed to bring you the perfect balance of 
+              care combined with the expertise of a team of highly trained, physician-supervised aestheticians 
+              and staff committed to offering you the most advanced treatments in skin care.
             </p>
-
-            <div class="icon-box" data-aos="fade-up">
-              <i class="bx bx-cube-alt"></i>
-              <p>
-                Botox and fillers are two popular options we offer to help reduce the appearance of wrinkles and fine lines. 
-                Vi-peel is another excellent choice for those looking for a way to improve the appearance of their skin. 
-                If you are looking for an IV therapy treatment, we offer that as well.
-              </p>
+  
+          </div> 
+  
+        </div>
+        
+        <div class="row p-5 strip-boxes" data-aos="fade-up">
+          
+            <div class="col-xl-12 text-center">
+              <h1 class="text-white font-weight-bold" style="font-size: 3.5rem;font-weight: 700;">Don’t wait and Book Now!</h1>
             </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-cube-alt"></i>
-              <p>
-                We are confident that we can provide you with the services you need to look and feel your best. 
-                Contact us today to schedule a consultation. 
-                We would be happy to discuss your options with you and help you decide which treatments are right for you.
-                <br><br>
-                <a data-aos="fade-up" data-aos-delay="100" href="javascript:void(0)" class="btn btn-outline-primary col-5 font-weight-bold">Book An Appointment</a>
-              </p>
+  
+            <div class="col-xl-6 mt-xl-5">
+              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-success col-12">Book An Appointment</a>
             </div>
-
-          </div>
+  
+            <div class="col-xl-6 mt-xl-5">
+              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-success col-12">Schedule A Consulation</a>
+            </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    <!-- End About Section -->
+
+    <!-- ======= About Section ======= -->
+    <!-- <section id="about" class="about">
+      <div class="container">
+
+        <div class="row two-side-row">
+  
+          <div class="col-lg-5 order-lg-1 order-md-2 order-2 content-side custom-title-index" data-aos="zoom-in" data-aos-delay="100" style="text-align: left">
+            
+            <h3 data-aos="fade-up" class="text-capitalize">Don’t Deprive Yourself of the Medi-Mani Experience!</h3>
+
+            <div class="accordion" data-aos="fade-up">
+
+              <label class="accordion__item">
+                <input type="checkbox" name="accordion">
+                <div class="accordion__title">Calm Your Nerves:</div>
+                <div class="accordion__content">
+                  <p>
+                    Relaxation is important for optimal health. If you’re into enhancing your overall well-being, then it’s essential to learn how to de-stress.
+                  </p>
+                </div>
+              </label>
+
+              <label class="accordion__item">
+                <input type="checkbox" name="accordion">
+                <div class="accordion__title">Today’s Medical Spas Have Advanced Technology:</div>
+                <div class="accordion__content">
+                  <p>
+                    The spas you’ll find today are equipped with all sorts of fascinating technologies. This includes healing devices that can enhance your skin.
+                  </p>
+                </div>
+              </label>
+
+              <label class="accordion__item">
+                <input type="checkbox" name="accordion">
+                <div class="accordion__title">Top-Notch Equipment and Treatments:</div>
+                <div class="accordion__content">
+                  <p>
+                    Medical spas have modern treatments that don’t require going under the knife. For instance, if you’re looking to undergo anti-aging treatments, you can do so using non-surgical options like chemical peels.
+                  </p>
+                </div>
+              </label>
+
+              <label class="accordion__item">
+                <input type="checkbox" name="accordion">
+                <div class="accordion__title">Address Your Long-Term Cosmetic Concerns:</div>
+                <div class="accordion__content">
+                  <p>
+                    At a medical spa, you receive state-of-the-art medical procedures, but in a relaxing atmosphere. A look at your medical history is observed beforehand to ensure you’re the right candidate for certain treatments.
+                  </p>
+                </div>
+              </label>
+
+              <label class="accordion__item">
+                <input type="checkbox" name="accordion">
+                <div class="accordion__title">Get into a Positive Mind State:</div>
+                <div class="accordion__content">
+                  <p>
+                    Why is this important? Because it allows your body to heal on a deeper level. Stress can cause a spike in hormones that can age you faster and damage your joints and tissues.
+                  </p>
+                </div>
+              </label>
+
+            </div>
+
+          </div> 
+
+          <div class="col-lg-7 order-lg-2 order-md-1 order-1 text-center custom-img-index" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/hero-bg_3.jpg" class="img-fluid img-border" alt="">
+          </div>
+  
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End About Section -->
 
     <!-- ======= Steps Section ======= -->
     <section id="steps" class="steps section-bg">
       <div class="container">
 
-        <div class="row no-gutters">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Don’t Deprive Yourself of the Medi-Mani Experience!</h2>
+        </div>
 
+        <div class="row no-gutters">
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in">
-            <span>01</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+            <span class="font-weight-600">01</span>
+            <h4 class="font-weight-600">Calm Your Nerves</h4>
+            <p>Relaxation is important for optimal health. If you’re into enhancing your overall well-being, then it’s essential to learn how to de-stress.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="100">
-            <span>02</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+            <span class="font-weight-600">02</span>
+            <h4 class="font-weight-600"> Today’s Medical Spas Have Advanced Technology</h4>
+            <p>The spas you’ll find today are equipped with all sorts of fascinating technologies. This includes healing devices that can enhance your skin.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="200">
-            <span>03</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+            <span class="font-weight-600">03</span>
+            <h4 class="font-weight-600">Top-Notch Equipment and Treatments</h4>
+            <p>Medical spas have modern treatments that don’t require going under the knife. For instance, if you’re looking to undergo anti-aging treatments, you can do so using non-surgical options like chemical peels.</p>
           </div>
 
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="300">
-            <span>04</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
+          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="300">
+            <span class="font-weight-600">04</span>
+            <h4 class="font-weight-600">Address Your Long-Term Cosmetic Concerns</h4>
+            <p>At a medical spa, you receive state-of-the-art medical procedures, but in a relaxing atmosphere. A look at your medical history is observed beforehand to ensure you’re the right candidate for certain treatments.</p>
           </div>
 
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="400">
-            <span>05</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item" data-aos="fade-in" data-aos-delay="500">
-            <span>06</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
+          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="400">
+            <span class="font-weight-600">05</span>
+            <h4 class="font-weight-600">Get into a Positive Mind State</h4>
+            <p>Why is this important? Because it allows your body to heal on a deeper level. Stress can cause a spike in hormones that can age you faster and damage your joints and tissues.</p>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Steps Section -->
+    </section>
+    <!-- End Steps Section -->
 
     <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
+    <!-- <section id="features" class="features">
       <div class="container">
 
         <div class="row">
@@ -230,7 +318,8 @@
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section> -->
+    <!-- End Features Section -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services section-bg">
@@ -238,6 +327,9 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Services</h2>
+          <p class="font-weight-600 mb-4">
+            At Medi-Mani, radiant, glowing, healthy skin is something we can help everyone make a reality. That’s why we offer a full spectrum of innovative, rejuvenating and age-decelerating treatments designed to improve your complexion and unlock more youthful, healthy skin.
+          </p>
         </div>
 
         <!-- <div class="row">
@@ -338,100 +430,61 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Services Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= About Section ======= -->
+    <section class="about">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Testimonials</h2>
-        </div>
+        <div class="row two-side-row">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+          <div class="col-lg-7 order-lg-1 order-md-1 order-1 text-center custom-img-index" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/hero-bg_3.jpg" class="img-fluid img-border" alt="">
           </div>
-          <div class="swiper-pagination"></div>
+  
+          <div class="col-lg-5 order-lg-2 order-md-2 order-2 content-side custom-title-index" data-aos="zoom-in" data-aos-delay="100" style="text-align: left">
+            
+            <h3 data-aos="fade-up">Appointments</h3>
+            <h4>Schedule Your Visit</h4>
+            <p data-aos="fade-up">
+              Schedule a consulation at our Medimani Medical Spa with one of our expert providers today to see how we can help you archieve your goals.
+            </p>
+
+            <a  href="javascript:(void)" class="btn btn-lg btn-success col-8 mt-4">Book An Appointment</a>
+  
+          </div> 
+  
         </div>
+        
+        <!-- <div class="row p-5 strip-boxes" data-aos="fade-up">
+          
+            <div class="col-xl-12 text-center">
+              <h1 class="text-white font-weight-bold" style="font-size: 3.5rem;font-weight: 700;">Don’t wait and Book Now!</h1>
+            </div>
+  
+            <div class="col-xl-6 mt-xl-5">
+              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-secondary col-12">Book An Appointment</a>
+            </div>
+  
+            <div class="col-xl-6 mt-xl-5">
+              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-secondary col-12">Schedule A Consulation</a>
+            </div>
+        </div> -->
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section>
+    <!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
+          <h2>Pamper Yourself In Luxury</h2>
         </div>
 
-        <div class="row" data-aos="fade-up">
+        <!-- <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
@@ -440,7 +493,7 @@
               <li data-filter=".filter-web">Web</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <div class="row portfolio-container" data-aos="fade-up">
 
@@ -448,11 +501,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -462,25 +514,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -490,11 +527,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 2</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -504,11 +540,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -518,11 +553,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -532,11 +566,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -546,11 +579,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 3</h4>
                 <p>Card</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -560,11 +592,10 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
                 </div>
               </div>
             </div>
@@ -573,7 +604,185 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Img comparison ======= -->
+    <section class="">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Results that Surpass Dreams!</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-xl-6 mb-5">
+            <figure class="cd-image-container">
+              <img src="assets/img/b2.jpg" alt="Original Image">
+              <span class="cd-image-label" data-type="original">Before</span>
+          
+              <div class="cd-resize-img"> <!-- the resizable image on top -->
+                <img src="assets/img/b1.jpg" alt="Modified Image">
+                <span class="cd-image-label" data-type="modified">After</span>
+              </div>
+          
+              <span class="cd-handle"></span>
+            </figure>
+          </div>
+
+          <div class="col-xl-6 mb-5">
+            <figure class="cd-image-container">
+              <img src="assets/img/b2.jpg" alt="Original Image">
+              <span class="cd-image-label" data-type="original">Before</span>
+          
+              <div class="cd-resize-img"> <!-- the resizable image on top -->
+                <img src="assets/img/b1.jpg" alt="Modified Image">
+                <span class="cd-image-label" data-type="modified">After</span>
+              </div>
+          
+              <span class="cd-handle"></span>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Img comparison -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="row">
+
+          <div class="section-title">
+            <h2>Patient Reviews</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="testimonial-carousel owl-carousel">
+
+          <div class="testimonial-block">
+            <div class="row">
+              <div class="col-xl-12">
+              <div class="review-svg bubble bg-img design-1">
+                <p class="review-text-height" id="review-text-1">My daughter has been going here from 2 years old. From Clermont to Fort.Lauderdale I will not change her doctors. This practice is highly recommended, they are efficient, reliable and beyond all very well educated. My daughter is now 12 and she’ll continue going here until she is no longer able to go.</p>   
+              </div>    
+              </div>
+          
+              <div class="col-xl-12">
+              <cite>
+                <div class="box-top">
+                <div class="row" style="margin-left: 38px;">
+          
+                  <div class="col-12" style="margin-bottom: -12px">
+                  <div class="profile">
+                    <div class="profile-img">
+                    <img src="assets/img/rms/comments-1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="name-user">
+                    <strong>Caroline Grant
+                      <img src="assets/img/google.png" alt="from google" class="img-fluid" style="margin-left: 6px;"></strong>
+                    <span>One Month Ago</span>
+                    </div>
+                  </div>                  
+                  </div>
+          
+                  <div class="col-12">
+                  <div class="reviews">
+                    <div class="stars" data-percent="100"></div>  
+                  </div>             
+                  </div>
+                </div>
+                </div>   
+              </cite>                
+              </div>            
+            </div>
+          </div>
+
+          <div class="testimonial-block">
+            <div class="row">
+              <div class="col-xl-12">
+              <div class="review-svg bubble bg-img design-4">
+                <p class="review-text-height" id="review-text-1">
+                My kids had the same doctor for about 14 years. I decided to change doctors because I got tired of the long wait for an appointment and when I arrived for their appt I had to wait another 35- 50 minutes to be see. I always use to see the commercial on the TV with Powers Pediatrics and Dr. Ansari with the little boy 👦. Still I was hesitant until a year ago when I took my teenagers to the office. My recent visit today and again I Love this place, no long wait for an appointment. Awesome experience, even got a call on the weekend to reschedule and confirm my appointment. Doctor and Nurse practitioner spent quality time with me and my daughter. Staff is friendly, kind and courteous. Place is clean and organize. Please check them out mommies and daddy's you won't be disappointed.
+                </p>   
+              </div>    
+              </div>
+          
+              <div class="col-xl-12">
+              <cite>
+                <div class="box-top">
+                <div class="row" style="margin-left: 38px;">
+          
+                  <div class="col-12" style="margin-bottom: -12px">
+                  <div class="profile">
+                    <div class="profile-img">
+                    <img src="assets/img/rms/comments-2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="name-user">
+                    <strong>Nathan Mullins
+                      <img src="assets/img/google.png" alt="from google" class="img-fluid" width="25" style="margin-left: 6px;"></strong>
+                    <span>One Month Ago</span>
+                    </div>
+                  </div>                  
+                  </div>
+          
+                  <div class="col-12">
+                  <div class="reviews">
+                    <div class="stars" data-percent="100"></div>  
+                  </div>             
+                  </div>
+                </div>
+                </div>   
+              </cite>                
+              </div>            
+            </div>
+          </div>
+
+          <div class="testimonial-block">
+            <div class="row">
+              <div class="col-xl-12">
+              <div class="review-svg bubble bg-img design-3">
+                <p class="review-text-height" id="review-text-1">on to his appointment they are very wonderful with him and my grandson is Autism. and if I need to make an emergency appointment they will see him either see him in there office or video visit.</p>   
+              </div>    
+              </div>
+          
+              <div class="col-xl-12">
+              <cite>
+                <div class="box-top">
+                <div class="row" style="margin-left: 38px;">
+          
+                  <div class="col-12 mt-2" style="margin-bottom: -12px">
+                  <div class="profile">
+                    <div class="profile-img">
+                    <img src="assets/img/rms/comments-3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="name-user">
+                    <strong>Maria Angel
+                      <img src="assets/img/google.png" alt="from google" class="img-fluid" width="25" style="margin-left: 6px;"></strong>
+                    <span>One Month Ago</span>
+                    </div>
+                  </div>                  
+                  </div>
+          
+                  <div class="col-12">
+                  <div class="reviews">
+                    <div class="stars" data-percent="100"></div>  
+                  </div>             
+                  </div>
+                </div>
+                </div>   
+              </cite>                
+              </div>            
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -660,7 +869,8 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section>
+    <!-- End Team Section -->
 
     <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -672,47 +882,54 @@
 
         <div class="faq-list">
           <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </li>
-
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Why do people go to medical spas?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  Most people visit medical spas to receive treatments that could improve their appearance. 
+                  Services such as exfoliation could help improve your skin's radiance and glow. 
+                  Visiting a medical spa might help you age gracefully.
+                  Treatments like Botox could reduce the appearance of wrinkles on your face.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What do you wear and bring to a medical spa? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  Generally, though, you’ll want to bring something light, comfortable and easy to change out of and store.
+                  <br>
+                  Flip-flops or open-toed sandals work well for shoes. Because you’ll be wearing a robe for most treatments, underwear that feels comfortable is also recommended. 
+                  <br>
+                  Jewelry is one clothing item that’s better to avoid or keep it at home when planning a spa day.                  
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What is the difference between a health spa and a medical spa?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                  Unlike day spas that focus on improving your outer appearance, medical spas provide medical procedures that are designed to not only improve the appearance but also repair your skin, hair, and even metabolic processes.
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Do I need to make an appointment for a procedure at Medi-Mani? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
                 <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                  Yes
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Why are med spas growing in popularity? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Patients flock to med spas to receive a different type of care than that which doctors offer in their traditional practices. USA Today reports that, in 2013, med spas represented nearly $2 billion in revenue.
                 </p>
               </div>
             </li>
@@ -721,7 +938,8 @@
         </div>
 
       </div>
-    </section><!-- End F.A.Q Section -->
+    </section>
+    <!-- End F.A.Q Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -738,19 +956,19 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>2375 E Camelback Rd, #600B, Phoenix, AZ 85016</p>
               </div>
 
               <div class="email mt-4">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>Contact@azihealth.com</p>
               </div>
 
               <div class="phone mt-4">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+1 866-686-2284</p>
               </div>
 
             </div>
@@ -762,37 +980,9 @@
           </div>
 
         </div>
-
-        <div class="row mt-5 justify-content-center" data-aos="fade-up">
-          <div class="col-lg-10">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -811,14 +1001,6 @@
                 <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
                 <strong>Email:</strong> Contact@azihealth.com<br>
               </p>
-
-              <div class="social-links mt-3">
-                <a href="javascript:void(0)" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="javascript:void(0)" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="javascript:void(0)" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="javascript:void(0)" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="javascript:void(0)" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
 
             </div>
           </div>
@@ -892,15 +1074,19 @@
   <a href="javascript:void(0)" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/rms.js"></script>
+  <script src="assets/js/img-comp.js"></script>
 
 </body>
 
