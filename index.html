@@ -2,1036 +2,1634 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>MediMani</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <title>Veins V1</title>
+    <!-- This page CSS -->
+    <!-- chartist CSS -->
+    <link href="assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <!--Toaster Popup message CSS -->
+    <link href="assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.css" rel="stylesheet">
+    <link href="dist/css/custom.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="assets/node_modules/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="assets/node_modules/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="assets/node_modules/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="assets/node_modules/css-chart/css-chart.css" rel="stylesheet">
+    <link href="dist/css/form.css" rel="stylesheet">
+    <link href="dist/css/pages/floating-label.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="assets/node_modules/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="assets/node_modules/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="assets/node_modules/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="assets/node_modules/css-chart/css-chart.css" rel="stylesheet">
+    <link href="dist/css/pages/easy-pie-chart.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-
-      <div class="logo">
-        <a href="index.html"><img src="assets/img/logo_2.png" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <!-- <li class="dropdown"><a href="javascript:void(0)"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="javascript:void(0)">Drop Down 1</a></li>
-              <li class="dropdown"><a href="javascript:void(0)"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="javascript:void(0)">Deep Drop Down 1</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 2</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 3</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 4</a></li>
-                  <li><a href="javascript:void(0)">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="javascript:void(0)">Drop Down 2</a></li>
-              <li><a href="javascript:void(0)">Drop Down 3</a></li>
-              <li><a href="javascript:void(0)">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+<body class="skin-blue fixed-layout">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Veins V1</p>
+        </div>
     </div>
-  </header><!-- End Header -->
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="assets/images/favicon.ico" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="assets/images/favicon.ico" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                         <!-- dark Logo text -->
+                         <img src="assets/images/rtplogo.png" alt="homepage" class="dark-logo" />
+                         <!-- Light Logo text -->    
+                          <img src="assets/images/rtplogo.png" style="height: 75px; margin-left: 35px;" class="light-logo" alt="homepage" /></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
+                        <li class="nav-item"><h1 class="dashboardName">Practice Dashboard</h1><p class="boldText text-white">RTP3234 - Powers Pediatrics - 7037 Rose Ave Orlando, FL 32810 - 407-286-2965</p></li>
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="userDashboard.html" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-home"  data-toggle="tooltip" data-placement="left" title="" data-original-title="User Dashboard"></i>
+                                <div class="notify"> </div>
+                            </a>
+                        </li>
 
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-      <div class="carousel-inner" role="listbox">
+                        <!-- ============================================================== -->
+                        <!-- Comment -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-search-location"  data-toggle="tooltip" data-placement="left" title="" data-original-title="My Locations"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">My Locations</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                            <!-- Message -->
+                                            <a href="index.html">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Powers Pediatrics</h5> <span class="mail-desc">Ornaldo, Florida</span> <span class="time">405-122-1222 | RTP1234</span> </div>
+                                            </a>
 
-        <!-- Slide 1 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-1.png)">
-          <div class="carousel-container">
-            <div class="container">
-              <div class="row">
+                                            <a href="index.html">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Powers Pediatrics</h5> <span class="mail-desc">Ornaldo, Florida</span> <span class="time">405-122-1222 | RTP1234</span> </div>
+                                            </a>
 
-                <div class="col-lg-8 offset-xl-8 offset-lg-6 col-12">
-                  <h2 class="animate__animated animate__fadeInDown">Welcome To MediMani</span></h2>
-                  <p class="animate__animated animate__fadeInUp">A Medical Spa at the forefront!</p>
+                                            <a href="index.html">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Powers Pediatrics</h5> <span class="mail-desc">Ornaldo, Florida</span> <span class="time">405-122-1222 | RTP1234</span> </div>
+                                            </a>
+
+                                            <a href="index.html">
+                                                <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
+                                                <div class="mail-contnet">
+                                                    <h5>Powers Pediatrics</h5> <span class="mail-desc">Ornaldo, Florida</span> <span class="time">405-122-1222 | RTP1234</span> </div>
+                                            </a>
+                                          
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center link" href="mylocationsPractice.html"> <strong>View All Locations</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Comment -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Messages -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-bell"  data-toggle="tooltip" data-placement="left" title="" data-original-title="Notifications"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new Notification</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                            <!-- Message -->
+                                            <a href="auditLog.html">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <span class="mail-desc">New Order Recieved</span> 
+                                                    <span class="time">9:30 AM</span> 
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+
+                                            <!-- Message -->
+                                            <a href="auditLog.html">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <span class="mail-desc">New Order Recieved</span> 
+                                                    <span class="time">9:30 AM</span> 
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+
+                                            <!-- Message -->
+                                            <a href="auditLog.html">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <span class="mail-desc">New Order Recieved</span> 
+                                                    <span class="time">9:30 AM</span> 
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <!-- Message -->
+                                            <a href="auditLog.html">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <span class="mail-desc">New Order Recieved</span> 
+                                                    <span class="time">9:30 AM</span> 
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <!-- Message -->
+                                            <a href="auditLog.html">
+                                                <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                                                <div class="mail-contnet">
+                                                    <span class="mail-desc">New Order Recieved</span> 
+                                                    <span class="time">9:30 AM</span> 
+                                                </div>
+                                            </a>
+
+                                            <!-- Message -->
+                                           
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center link" href="auditLogUser.html"> <strong>See All</strong> <i class="fa fa-angle-right"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="" data-toggle="modal" data-target="#mergev2Modal" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-check" data-toggle="tooltip" data-placement="left" title="" data-original-title="Quick Check-in"></i>
+                                <div class="notify"> </div>
+                            </a>
+                        </li>
+                      
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- User Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown u-pro">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/1.jpg" alt="user" class=""> <span class="hidden-md-down">Ravi Agrawal &nbsp;<i class="fa fa-angle-down"></i></span> </a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <!-- text-->
+                                 <a href="personalSetting.html" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                                <!-- text-->
+                                <div class="dropdown-divider"></div>
+                                <!-- text-->
+                                <a href="login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                                <!-- text-->
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-dark" href="lockscreen.html" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-lock"  data-toggle="tooltip" data-placement="left" title="" data-original-title="lockscreen"></i>
+                                <div class="notify"> </div>
+                            </a>
+                        </li>
+
+
+                     
+                        <!-- ============================================================== -->
+                        <!-- End User Profile -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+
+                        <li class="nav-small-cap">Admin</li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-map"></i><span class="hide-menu">Location</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="demographics.html">Location Info</a></li>
+                                <li><a href="physicians.html">Physicians</a></li>
+                                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu">Veins Check-in</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="reasons.html">Visit Type</a></li>
+                                        <li><a href="intakeDemo.html">Demo</a></li>
+                                        <li><a href="intakeQuestionnaire.html">Questionnaire</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu">Veins Tracker</span></a>
+                                    <ul aria-expanded="false" class="collapse">
+                                        <li><a href="stageAndStep.html">Stage And Step</a></li>
+                                        <li><a href="resource.html">Resource</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="taskstodo.html">Tasks To-do</a></li>
+                                <li><a href="smsTemplates.html">SMS Template</a></li>
+                                <li><a href="emailTemplates.html">Email Template</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="waves-effect waves-dark" href="auditLog.html" aria-expanded="false"><i class="fas fa-clipboard"></i><span class="hide-menu">Aduit Log</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="upload.html" aria-expanded="false"><i class="fas fa-upload"></i><span class="hide-menu">Upload</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-sign-out-alt text-success"></i><span class="hide-menu">Log Out</span></a></li>
+                        
+                        <li class="nav-small-cap">Operations</li>
+                        <li> <a class="waves-effect waves-dark" href="checkIn.html" aria-expanded="false"><i class="far fa-circle text-danger"></i><span class="hide-menu">Veins Check In</span></a></li>
+                    
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-tv"></i><span class="hide-menu">Veins Tracker<span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="stageDisplay.html">Stage Display </a></li>
+                                <li><a href="lobbyDisplay.html">Lobby Display</a></li>
+                                <li><a href="checkOut.html">Check Out</a></li>
+                            </ul>
+                        </li>
+
+                        <li> <a class="waves-effect waves-dark" href="tasks.html" aria-expanded="false"><i class="far fa-circle text-danger"></i><span class="hide-menu">Tasks</span></a></li>
+
+                        <li> <a class="waves-effect waves-dark" href="patientPortal.html" aria-expanded="false"><i class="fas fa-clinic-medical text-danger"></i><span class="hide-menu">Patients</span></a></li>
+                        
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-cash-register"></i><span class="hide-menu">Payments <span class="badge badge-pill badge-info">25</span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="paymentrequest.html">Active Requests</a></li>
+                                <li><a href="paymentpaid.html">Paid</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-small-cap">Reports</li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-list"></i><span class="hide-menu">Reports<span class="badge badge-pill badge-cyan ml-auto">4</span></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="visittypesum.html">Visit Type Summary</a></li>
+                                <li><a href="taskdetail.html">Task Detail</a></li>
+                                <li><a href="tasksum.html">Task Summary</a></li>
+                                <li><a href="statisticReport.html">Statistic Reports</a></li>
+                                <li><a href="waitTimeReports.html">Wait Time Reports</a></li>
+                                <li><a href="advancedWaitTime.html">Advanced Wait Time Reports</a></li>
+                                <li>
+                                    <a href="dailyReport.html">Daily Reports</a>
+                                </li>
+                                <li>
+                                    <a href="stepReport.html">Step Reports</a>
+                                </li>
+                                <li>
+                                    <a href="physicianReport.html">Physician Reports</a>
+                                </li>
+                                <li>
+                                    <a href="staffReport.html">Staff Reports</a>
+                                </li>
+                                <li>
+                                    <a href="paymentReport.html">Payment Reports</a>
+                                </li>
+                                <li>
+                                    <a href="checkoutReport.html">Checkout Reports</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h4 class="text-themecolor">Dashboard</h4>
+                    </div>
+                    <div class="col-md-7 align-self-center text-right">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-9 offset-xl-8 offset-lg-6 col-12 action-btn-placement">
-                  <a href="javascript:void(0)" class="btn call-to-action animate__animated animate__fadeInUp scrollto">Book An Appointment</a> 
-                </div>  
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <h4 class="card-title">Weather Report</h4>
+                                        <select class="custom-select w-25 ml-auto">
+                                            <option selected="">Today</option>
+                                            <option value="1">Weekly</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex align-items-center flex-row m-t-30">
+                                        <div class="p-2 display-5 text-info">
+                                            <i class="wi wi-day-showers"></i>
+                                            <span>73
+                                                <sup>°</sup>
+                                            </span>
+                                        </div>
+                                        <div class="p-2">
+                                            <h3 class="m-b-0">Saturday</h3>
+                                            <small>Ahmedabad, India</small>
+                                        </div>
+                                    </div>
+                                    <table class="table no-border">
+                                        <tbody>
+                                            <tr>
+                                                <td>Wind</td>
+                                                <td class="font-medium">ESE 17 mph</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Humidity</td>
+                                                <td class="font-medium">83%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Pressure</td>
+                                                <td class="font-medium">28.56 in</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cloud Cover</td>
+                                                <td class="font-medium">78%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ceiling</td>
+                                                <td class="font-medium">25760 ft</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <ul class="list-unstyled row text-center city-weather-days">
+                                        <li class="col">
+                                            <i class="wi wi-day-sunny"></i>
+                                            <span>09:30</span>
+                                            <h3>70
+                                                <sup>°</sup>
+                                            </h3>
+                                        </li>
+                                        <li class="col">
+                                            <i class="wi wi-day-cloudy"></i>
+                                            <span>11:30</span>
+                                            <h3>72
+                                                <sup>°</sup>
+                                            </h3>
+                                        </li>
+                                        <li class="col">
+                                            <i class="wi wi-day-hail"></i>
+                                            <span>13:30</span>
+                                            <h3>75
+                                                <sup>°</sup>
+                                            </h3>
+                                        </li>
+                                        <li class="col">
+                                            <i class="wi wi-day-sprinkle"></i>
+                                            <span>15:30</span>
+                                            <h3>76
+                                                <sup>°</sup>
+                                            </h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Stage Preview</h4>
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="75"><span class="percent"></span><div class="boldText">Stage 01</div></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="75"><span class="percent"></span><div class="boldText">Stage 02</div></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="45"><span class="percent"></span><div class="boldText">Stage 03</div></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="22"><span class="percent"></span><div class="boldText">Stage 04</div></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="35"><span class="percent"></span><div class="boldText">Stage 05</div></div>
+                                        </div>
+                                        <div class="col-lg-2 col-md-6 m-b-30">
+                                            <div class="chart easy-pie-chart-1" data-percent="15"><span class="percent"></span><div class="boldText">Stage 06</div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>86%</h3>
+                                            <h6 class="card-subtitle boldText">Locations</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
 
-              </div>
-            </div>
-          </div>
-        </div>
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>40%</h3>
+                                            <h6 class="card-subtitle boldText">Patients</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 40%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
 
-        <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.png)">
-          <div class="carousel-container">
-            <div class="container">
-              <!-- <div class="col-lg-5 offset-xl-7 offset-lg-3 col-12">
-               <h2 class="animate__animated animate__fadeInDown">SPA La La La La Is Coming Soon!</h2>
-               <p class="animate__animated animate__fadeInUp">Monday, November 28</p> 
-              </div> -->
-            </div>
-          </div>
-        </div>
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>56%</h3>
+                                            <h6 class="card-subtitle boldText">Users</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 56%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
 
-        <!-- Slide 3 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-3.png)">
-          <div class="carousel-container">
-            <div class="container">
-              <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>26%</h3>
+                                            <h6 class="card-subtitle boldText">Texts</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-inverse" role="progressbar" style="width: 26%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
 
-                <div class="col-lg-8 offset-xl-8 offset-lg-5 col-12">
-                  <h2 class="animate__animated animate__fadeInDown text-uppercase text-white">Did Someone Say<br> Big Sale?</h2>
-                  <p class="animate__animated animate__fadeInUp text-white">It's Here, The Year's Biggest<br> CoolSculpting Sale.</p>
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>26%</h3>
+                                            <h6 class="card-subtitle boldText">Emails</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-inverse" role="progressbar" style="width: 26%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+
+                        <!-- Column -->
+                        <div class="col-lg-2 col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>26%</h3>
+                                            <h6 class="card-subtitle boldText">Payments</h6></div>
+                                        <div class="col-12">
+                                            <div class="progress">
+                                                <div class="progress-bar bg-inverse" role="progressbar" style="width: 26%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                    </div>
+
                 </div>
+                <!-- ============================================================== -->
 
-                <div class="col-lg-9 offset-xl-8 offset-lg-5 col-12 action-btn-placement">
-                  <a href="javascript:void(0)" class="btn call-to-action animate__animated animate__fadeInUp scrollto text-white">TAKE A LOOK</a> 
-                </div>  
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+            <!-- Patients Check in -->
+    <div id="mergev2Modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog cascading-modal modal-lg" role="document">
+            <!-- Content -->
+            <div class="modal-content">
 
+              <!--Modal cascading tabs-->
+              <div class="modal-c-tabs">
+                  <!-- === Merge Patient Panel ==== -->
+                    <!-- Body -->
+                    <div class="modal-body mb-1 pt-2">
+                      <div class="table-responsive">
+                        <div class="container">
+                            <div class="row mt-3 mb-3">
+                                <button type="button" class="btn btn-outline-info waves-effect col-12" data-toggle="modal" data-target="#alertv3Modal">This is a New Patient</button>   
+                            </div>                                
+                        </div>
+
+                        <hr class="solid text-black-50">
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <form class="floating-labels">
+                                    <legend class="text-center" style="font-weight: 900;">Search in your Practice Patient Profile Database</legend>
+                                    <div class="row">                                
+                                        <div class="form-group m-b-40" style="margin-left: 10px;">
+                                            <input type="text" class="form-control" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Search By First Name</label>
+                                        </div>
+                                        <div class="form-group m-b-40" style="margin-left: 10px;">
+                                            <input type="text" class="form-control" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Search By Last Name</label>
+                                        </div>
+                                        <div class="form-group m-b-40" style="margin-left: 10px;">
+                                            <input type="text" class="form-control" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Search By Phone</label>
+                                        </div>
+                                        <div class="form-group m-b-40" style="margin-left: 10px;">
+                                            <input type="date" class="form-control" id=""><span class="bar"></span>
+                                        </div>
+                                    </div>                                
+                                </form>
+                            </div>
+                        </div>
+
+                        <table  class="table display table-bordered table-striped no-wrap">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>PT ID</th>
+                                    <th>SSN</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>DOB</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-facebook btn-sm waves-effect waves-light" type="button" data-toggle="modal" data-target="#alertv2Modal">1</button>
+                                    </td>
+                                    <td>1</td>
+                                    <td>Shakir</td>
+                                    <td>Ansari</td>
+                                    <td>11/10/1999</td>
+                                    <td>x@gmail.com</td>
+                                    <td>9872712063</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="btn btn-facebook btn-sm waves-effect waves-light" type="button" data-toggle="modal" data-target="#alertv2Modal">1</button>
+                                    </td>
+                                    <td>1</td>
+                                    <td>Ravi</td>
+                                    <td>A.</td>
+                                    <td>11/10/1999</td>
+                                    <td>x@gmail.com</td>
+                                    <td>9872712063</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                    </div>
+                    <!-- Footer -->
+
+
+                  <!-- === Merge Patient Panel ==== -->
               </div>
             </div>
+            <!-- Content -->
           </div>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
     </div>
-  </section><!-- End Hero -->
+    <!-- Patients Check in -->
 
-  <main id="main">
+    <!-- Alert V2-->
+    <div class="modal bs-example-modal-lg fade" id="alertv2Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Est Patient Check In</h4>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-success waves-effect waves-light col-12">Continue</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-danger waves-effect waves-light col-12" data-dismiss="modal">Close</button>  
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <section id="step-1" class="section active m-b-40">
+                                <div class="container text-center" id="middleFix">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Select Visit Type</h3>
+                                        <!--Checkbox-->
+                                        <div class="form-group">
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Walk In</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Appointment</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Telemedicine</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Phone Consult</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">No visit</label>  
+                                        </div>
+                                        </div>
+                                        <!--Checkbox-->
+                                </div>
 
-    <!-- ======= About Section ======= -->
-    <section class="about about-bg">
-      <div class="container">
+                            </section>
+                        </div>
 
-        <div class="row two-side-row">
+                        <div class="col-6">
+                            <section id="step-2" class="section active m-b-40">
+                                <div class="container text-center" id="middleFix">
+                                        <h3 class="font-weight-bold h3Spacing text-center">Select Visit Reason</h3>
+                                        <!--Checkbox-->
+                                        <div class="form-group">
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Sick</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Physical</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Allergy test</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">New Patient Sick</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">New Patient Physical</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Med Rifil</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Follow Up</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Fluoride</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Circumcision</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Post E.R/ Urgent care</label>  
+                                        </div>
+                                        </div>
+                                        <!--Checkbox-->
+                                </div>
+                            </section>                            
+                        </div>
 
-          <div class="col-lg-7 order-lg-1 order-md-1 order-1 text-center custom-img-index" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/hero-bg_4.jpg" class="img-fluid img-border" alt="">
-          </div>
-  
-          <div class="col-lg-5 order-lg-2 order-md-2 order-2 content-side custom-title-index" data-aos="zoom-in" data-aos-delay="100" style="text-align: left">
+                        <div class="col-6">
+                            <section id="step-3" class="section active m-b-40">
+                            <div class="container form-containerV2">
+                                <h3 class="font-weight-bold h3Spacing text-center">Basic Details</h3>
+                                    <form class="floating-labels">
+                                        <!-- first row -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                            <!-- first name -->
+                                            <div class="form-group focused m-b-40">
+                                                <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                <label for="float-label">First Name</label>
+                                            </div>
+                                            <!-- first name -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                            <!-- last name -->
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="">Last Name</label>
+                                            </div>
+                                            <!-- last name -->
+                                            </div>
+                                        </div>
+                                        <!-- first row -->
+                    
+                                        <!-- second row -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group m-b-40">
+                                                    <input type="date" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-lg-12">
+                                                <div class="form-group m-b-40">
+                                                    <select class="form-control custom-select"tabindex="1">
+                                                        <option value="">Choose a Gender</option>                                                            
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                        <option value="">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- second row -->
+                    
+                                        <!-- fourth row -->
+                                        <div class="row">
+                                                <div class="form-group m-b-40 col-12">
+                                                    <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                    <label for="">Social Security Number</label>
+                                                </div>
+                                        </div>
+                                        <!-- fourth row -->
+                                    </form>
+                            </div>
+                            </section>                            
+                        </div>
+
+                        <div class="col-6">
+                            <section id="step-4" class="section active m-b-40">
+                            <div class="container form-containerV2">                                
+                                <h3 class="font-weight-bold h3Spacing text-center">Contact Information</h3>
+                                <form class="floating-labels">
+                                <!-- third row -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group m-b-40">
+                                            <input type="tel" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group m-b-40">
+                                            <input type="email" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- third row -->
+                                </form>
+                            </div>
+                            </section> 
+                            <section id="step-5" class="section active m-b-40">
+                                <div class="container form-containerV2" style="margin-top: -165px !important;">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Address</h3>
+                                    <form class="floating-labels">
+                                        <!-- fifth row -->
+                                        <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="street">Street</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="city">City</label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="zip">Zip</label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <select class="form-control custom-select"tabindex="1">
+                                                    <option value="">Choose State</option>                                                            
+                                                    <option value="FL">FL</option>
+                                                    <option value="AL">AL</option>
+                                                    <option value="AK">AK</option>
+                                                    <option value="AZ">AZ</option>
+                                                    <option value="AR">AR</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="CO">CO</option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="DE">DE</option>
+                                                    <option value="GA">GA</option>
+                                                    <option value="HI">HI</option>
+                                                    <option value="ID">ID</option>
+                                                    <option value="IL">IL</option>
+                                                    <option value="IN">IN</option>
+                                                    <option value="IA">IA</option>
+                                                    <option value="KS">KS</option>
+                                                    <option value="KY">KY</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="MD">MD</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MI">MI</option>
+                                                    <option value="MN">MN</option>
+                                                    <option value="MS">MS</option>
+                                                    <option value="MO">MO</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="NE">NE</option>
+                                                    <option value="NV">NV</option>
+                                                    <option value="NH">NH</option>
+                                                    <option value="NJ">NJ</option>
+                                                    <option value="NM">NM</option>
+                                                    <option value="NY">NY</option>
+                                                    <option value="NC">NC</option>
+                                                    <option value="ND">ND</option>
+                                                    <option value="OH">OH</option>
+                                                    <option value="OK">OK</option>
+                                                    <option value="OR">OR</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="RI">RI</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="TN">TN</option>
+                                                    <option value="TX">TX</option>
+                                                    <option value="UT">UT</option>
+                                                    <option value="VT">VT</option>
+                                                    <option value="VA">VA</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="WV">WV</option>
+                                                    <option value="WI">WI</option>
+                                                    <option value="WY">WY</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
+                                        <!-- fifth row -->
+                                    </form>
+                                </div>
+                            </section>                             
+                        </div> 
+
+                        <div class="col-12">
+                            <section id="step-6" class="section active m-b-40">
+                                <div class="container form-containerV3">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Custom Demo</h3>
+                                    <div class="row">
+
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                    <label for="float-label">What Country are you from?</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-6" style="margin-top: -20px;">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group" style="margin-bottom: 2px !important;">
+                                                    <p class="boldText">What are you symptoms (check the options below):</p>
+                                                </div> 
+                                            </fieldset>
+                                            <div class="input-group">
+                                                    <div class="row">
+                                                        <div>
+                                                            <input class="input1" type='checkbox' value='3' name='checkbox' id=''/>
+                                                            <label for='checkbox1' class="btn btn-outline-info label2">Option O1</label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="input1" type='checkbox' value='4' name='checkbox' id=''/>
+                                                            <label for='checkbox1' class="btn btn-outline-info label2">Option O2</label>
+                                                        </div>
+                                                    </div>
+                                            </div>                                                
+                                        </div>
+                                        
+                                        <div class="col-6" style="margin-top: -8px;">
+                                                <label class="boldText m-b-20">Rate Your experience:</label>
+                                            <div class="form-group"  style="margin-left: -40px;"> 
+                                                <div class="input-group" style="width: 200% !important;">
+                                                    <ul class="ul1">
+                                                        <fieldset class="floating-labels">
+                                                            <div class="row">
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='1' name='radio' id='radio1'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Very Bad">O1</label>
+                                                                </div>
             
-            <h3 data-aos="fade-up">About Us</h3>
-            <p data-aos="fade-up">
-              Welcome to Medi-Mani, where helping you enhance and maintain your most beautiful and healthy skin is our 
-              number one priority. 
-              <br><br>
-              Our spa has been specifically designed to bring you the perfect balance of 
-              care combined with the expertise of a team of highly trained, physician-supervised aestheticians 
-              and staff committed to offering you the most advanced treatments in skin care.
-            </p>
-  
-          </div> 
-  
-        </div>
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='2' name='radio' id='radio2'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Bad">O2</label>
+                                                                </div> 
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='3' name='radio' id='radio3'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Modarate">O3</label>
+                                                                </div> 
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='4' name='radio' id='radio4'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Good">O4</label>
+                                                                </div>   
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='5' name='radio' id='radio5'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Very Good">O5</label>
+                                                                </div>                                              
+                                                            </div>
+                                                        </fieldset>
+                                                    </ul>
+                                                </div>
+                                            </div>
 
-      </div>
-    </section>
+                                        </div>
 
-    <section>
-      <div class="container strip-boxes">
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                            <div class="form-group"  style="margin-bottom: 2px !important;">
+                                                <p class="boldText">What are you symptoms (check the options below):</p>
+                                            </div> 
+                                            </fieldset>
+                                            <div class="input-group">
+                                                <div class="row">
+                                                    <div>
+                                                        <input class="input1" type='radio' value='1' name='radio' id='radio1'/>
+                                                        <label for='radio1' class="btn btn-outline-info label1">Option O1</label>
+                                                    </div>
+                                                    <div>
+                                                        <input class="input1" type='radio' value='2' name='radio' id='radio2'/>
+                                                        <label for='radio2' class="btn btn-outline-info label1">Option O2</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                    <label for="float-label">Provide your Email Address:</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
 
-        <div class="row p-5 " data-aos="fade-up">
-          
-            <div class="col-xl-12 text-center">
-              <h1 class="text-white font-weight-bold text-uppercase" style="font-size: 3.5rem;font-weight: 700;">Don’t wait and Book Now!</h1>
-            </div>
-  
-            <div class="col-xl-6 col-lg-6 col-md-12 mt-xl-5">
-              <a href="javascript:(void)" class="btn btn-lg fancy-btn-white col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">Book An Appointment</a>
-            </div>
-  
-            <div class="col-xl-6 col-lg-6 col-md-12 mt-xl-5">
-              <a href="javascript:(void)" class="btn btn-lg fancy-btn-white col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">Schedule A Consulation</a>
-            </div>
-        </div>
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required phone-inputmask" id="filler_name" name="filler_name">
+                                                    <label for="float-label">Provide your phone number:</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
 
-      </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= Steps Section ======= -->
-    <section id="steps" class="steps section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Don’t Deprive Yourself of the Medi-Mani Experience!</h2>
-        </div>
-
-        <div class="row no-gutters">
-          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in">
-            <span class="font-weight-600 mb-4">
-              <img src="assets/img/icons/nerves.png" class="lazyload" width="40px" height="40px"> Calm Your Nerves
-            </span>
-            
-            <p>
-              Relaxation is important for optimal health. <br>
-              If you’re into enhancing your overall well-being, then it’s essential to learn how to de-stress.
-            </p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="100">
-            <span class="font-weight-600 mb-4">
-              <img src="assets/img/icons/at.png" class="lazyload" width="40px" height="40px"> Today’s Medical Spas Have Advanced Technology
-            </span>
-            <p>The spas you’ll find today are equipped with all sorts of fascinating technologies. This includes healing devices that can enhance your skin.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="200">
-            <span class="font-weight-600 mb-4">
-              <img src="assets/img/icons/eq.png" class="lazyload" width="40px" height="40px"> Top-Notch Equipment and Treatments
-            </span>
-            <p>Medical spas have modern treatments that don’t require going under the knife. For instance, if you’re looking to undergo anti-aging treatments, you can do so using non-surgical options like chemical peels.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="300">
-            <span class="font-weight-600 mb-4">
-              <img src="assets/img/icons/makeup.png" class="lazyload" width="40px" height="40px"> Address Your Long-Term Cosmetic Concerns
-            </span>
-            <p>At a medical spa, you receive state-of-the-art medical procedures, but in a relaxing atmosphere. A look at your medical history is observed beforehand to ensure you’re the right candidate for certain treatments.</p>
-          </div>
-
-          <div class="col-lg-6 col-md-6 content-item" data-aos="fade-in" data-aos-delay="400">
-            <span class="font-weight-600 mb-4">
-              <img src="assets/img/icons/positive.png" class="lazyload" width="40px" height="40px"> Get into a Positive Mind State
-            </span>
-            <p>Why is this important? Because it allows your body to heal on a deeper level. Stress can cause a spike in hormones that can age you faster and damage your joints and tissues.</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Steps Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services service-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p class="font-weight-600 mb-4">
-            At Medi-Mani, radiant, glowing, healthy skin is something we can help everyone make a reality. That’s why we offer a full spectrum of innovative, rejuvenating and age-decelerating treatments designed to improve your complexion and unlock more youthful, healthy skin.
-          </p>
-        </div>
-
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-            <div class="icon-box icon-box-pink">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box icon-box-cyan">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box icon-box-blue">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-            </div>
-          </div>
-
-        </div> -->
-
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-md-4">
-            <div class="row about-item" data-aos="fade-right" data-aos-delay="100">
-              <div class="col-md-12 about-icon">
-                <div class="about-image"><img src="assets/img/service/vipeel.jpg" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-md-12 about-content">
-                <h4 style="text-align: center;">Vi-Peel</h4>
-                <p>
-                  VI Peels are the next-generation anti-aging beauty treatment administered pain-free and 
-                  compatible with all skin types. This spa treatment promotes new facial tissue growth by 
-                  eliminating damaged skin layers (scars, acne, sunburns, etc.), leaving you with smoother and 
-                  fresher skin. The special phenol components instead of acetic acids in most facial chemical peels 
-                  bring more safe and effective results.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="row about-item" data-aos="fade-right" data-aos-delay="100">
-              <div class="col-md-12 about-icon">
-                <div class="about-image"><img src="assets/img/service/botox.jpg" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-md-12 about-content">
-                <h4 style="text-align: center;">Botox</h4>
-                <p>
-                  Botox therapy is the Number 1 Anti-Wrinkle Treatment that takes a few years off your look. 
-                  Botox anti-aging treatment relaxes facial muscles and reduces the appearance of creases and wrinkles.
-                  In combination with ViPeel, we developed a synergistic <strong>“toxbooster”</strong>, taking away the wrinkles while 
-                  developing smooth clean lighter facial skin.
-                  <br>
-                  ViPeel & Botox <strong>“Toxbooster”</strong> therapy is conducted by qualified health practitioners and delivers <strong>REAL</strong> results!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="row about-item" data-aos="fade-right" data-aos-delay="100">
-              <div class="col-md-12 about-icon">
-                <div class="about-image"><img src="assets/img/service/iv.jpg" class="img-fluid"></div>
-              </div>
-              <div class="col-md-12 about-content">
-                <h4 style="text-align: center;">IV-Therapy</h4>
-                <p>
-                  Medi-Mani IV therapy delivers pure, 
-                  concentrated, and combined essential fluids, vitamins, minerals, and amino acids intravenously under 
-                  the supervision of a healthcare specialist. Each formulated IV drip is infused directly into the bloodstream 
-                  for maximum bioavailability and efficiently meets a specific body need. Researched & developed by certified 
-                  team of dermatologists, he combination of toxbooster and Myer's cocktails develop a beautiful & h
-                  ealthy body and skin, inside out.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= About Section ======= -->
-    <section class="about service-bg">
-      <div class="container">
-
-        <div class="row two-side-row">
-
-          <div class="col-lg-7 order-lg-1 order-md-1 order-1 text-center custom-img-index" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/hero-bg_3.jpg" class="img-fluid img-border" alt="">
-          </div>
-  
-          <div class="col-lg-5 order-lg-2 order-md-2 order-2 content-side custom-title-index" data-aos="zoom-in" data-aos-delay="100" style="text-align: left">
-            
-            <h3 data-aos="fade-up">Appointments</h3>
-            <h4>Schedule Your Visit</h4>
-            <p data-aos="fade-up">
-              Schedule a consulation at our Medimani Medical Spa with one of our expert providers today to see how we can help you archieve your goals.
-            </p>
-
-            <a  href="javascript:(void)" class="btn btn-lg fancy-btn col-8 mt-4">Book An Appointment</a>
-  
-          </div> 
-  
-        </div>
-        
-        <!-- <div class="row p-5 strip-boxes" data-aos="fade-up">
-          
-            <div class="col-xl-12 text-center">
-              <h1 class="text-white font-weight-bold" style="font-size: 3.5rem;font-weight: 700;">Don’t wait and Book Now!</h1>
-            </div>
-  
-            <div class="col-xl-6 mt-xl-5">
-              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-secondary col-12">Book An Appointment</a>
-            </div>
-  
-            <div class="col-xl-6 mt-xl-5">
-              <a style="z-index: 9999;" href="javascript:(void)" class="btn btn-lg btn-secondary col-12">Schedule A Consulation</a>
-            </div>
-        </div> -->
-
-      </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Pamper Yourself In Luxury</h2>
-        </div>
-
-        <!-- <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div> -->
-
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Img comparison ======= -->
-    <section class="">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Results that Surpass Dreams!</h2>
-        </div>
-        <div class="row">
-
-          <div class="col-xl-6 mb-5">
-            <figure class="cd-image-container">
-              <img src="assets/img/b2.jpg" alt="Original Image">
-              <span class="cd-image-label" data-type="original">Before</span>
-          
-              <div class="cd-resize-img"> <!-- the resizable image on top -->
-                <img src="assets/img/b1.jpg" alt="Modified Image">
-                <span class="cd-image-label" data-type="modified">After</span>
-              </div>
-          
-              <span class="cd-handle"></span>
-            </figure>
-          </div>
-
-          <div class="col-xl-6 mb-5">
-            <figure class="cd-image-container">
-              <img src="assets/img/b2.jpg" alt="Original Image">
-              <span class="cd-image-label" data-type="original">Before</span>
-          
-              <div class="cd-resize-img"> <!-- the resizable image on top -->
-                <img src="assets/img/b1.jpg" alt="Modified Image">
-                <span class="cd-image-label" data-type="modified">After</span>
-              </div>
-          
-              <span class="cd-handle"></span>
-            </figure>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- End Img comparison -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="row">
-
-          <div class="section-title">
-            <h2>Patient Reviews</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="testimonial-carousel owl-carousel">
-
-          <div class="testimonial-block">
-            <div class="row">
-              <div class="col-xl-12">
-              <div class="review-svg bubble bg-img design-1">
-                <p class="review-text-height" id="review-text-1">My daughter has been going here from 2 years old. From Clermont to Fort.Lauderdale I will not change her doctors. This practice is highly recommended, they are efficient, reliable and beyond all very well educated. My daughter is now 12 and she’ll continue going here until she is no longer able to go.</p>   
-              </div>    
-              </div>
-          
-              <div class="col-xl-12">
-              <cite>
-                <div class="box-top">
-                <div class="row" style="margin-left: 38px;">
-          
-                  <div class="col-12" style="margin-bottom: -12px">
-                  <div class="profile">
-                    <div class="profile-img">
-                    <img src="assets/img/rms/comments-1.jpg" alt="" class="img-fluid">
+                                        <div class="col-6" style="margin-top: -20px;">
+                                            <fieldset class="floating-labels">
+                                            <div class="form-group"  style="margin-bottom: 2px !important;">
+                                                <p class="boldText">Put in your Date of Service:</p>
+                                            </div>
+                                            <div class="form-group" style="margin-top: -18px;">
+                                                <input type="date" class="form-control" id=""><span class="bar"></span>
+                                            </div>
+                                            </fieldset>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                                </div>
+                            </section>                            
+                        </div>
                     </div>
-                    <div class="name-user">
-                    <strong>Caroline Grant
-                      <img src="assets/img/google.png" alt="from google" class="img-fluid" style="margin-left: 6px;"></strong>
-                    <span>One Month Ago</span>
-                    </div>
-                  </div>                  
-                  </div>
-          
-                  <div class="col-12">
-                  <div class="reviews">
-                    <div class="stars" data-percent="100"></div>  
-                  </div>             
-                  </div>
                 </div>
-                </div>   
-              </cite>                
-              </div>            
             </div>
-          </div>
-
-          <div class="testimonial-block">
-            <div class="row">
-              <div class="col-xl-12">
-              <div class="review-svg bubble bg-img design-4">
-                <p class="review-text-height" id="review-text-1">
-                My kids had the same doctor for about 14 years. I decided to change doctors because I got tired of the long wait for an appointment and when I arrived for their appt I had to wait another 35- 50 minutes to be see. I always use to see the commercial on the TV with Powers Pediatrics and Dr. Ansari with the little boy 👦. Still I was hesitant until a year ago when I took my teenagers to the office. My recent visit today and again I Love this place, no long wait for an appointment. Awesome experience, even got a call on the weekend to reschedule and confirm my appointment. Doctor and Nurse practitioner spent quality time with me and my daughter. Staff is friendly, kind and courteous. Place is clean and organize. Please check them out mommies and daddy's you won't be disappointed.
-                </p>   
-              </div>    
-              </div>
-          
-              <div class="col-xl-12">
-              <cite>
-                <div class="box-top">
-                <div class="row" style="margin-left: 38px;">
-          
-                  <div class="col-12" style="margin-bottom: -12px">
-                  <div class="profile">
-                    <div class="profile-img">
-                    <img src="assets/img/rms/comments-2.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="name-user">
-                    <strong>Nathan Mullins
-                      <img src="assets/img/google.png" alt="from google" class="img-fluid" width="25" style="margin-left: 6px;"></strong>
-                    <span>One Month Ago</span>
-                    </div>
-                  </div>                  
-                  </div>
-          
-                  <div class="col-12">
-                  <div class="reviews">
-                    <div class="stars" data-percent="100"></div>  
-                  </div>             
-                  </div>
-                </div>
-                </div>   
-              </cite>                
-              </div>            
-            </div>
-          </div>
-
-          <div class="testimonial-block">
-            <div class="row">
-              <div class="col-xl-12">
-              <div class="review-svg bubble bg-img design-3">
-                <p class="review-text-height" id="review-text-1">on to his appointment they are very wonderful with him and my grandson is Autism. and if I need to make an emergency appointment they will see him either see him in there office or video visit.</p>   
-              </div>    
-              </div>
-          
-              <div class="col-xl-12">
-              <cite>
-                <div class="box-top">
-                <div class="row" style="margin-left: 38px;">
-          
-                  <div class="col-12 mt-2" style="margin-bottom: -12px">
-                  <div class="profile">
-                    <div class="profile-img">
-                    <img src="assets/img/rms/comments-3.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="name-user">
-                    <strong>Maria Angel
-                      <img src="assets/img/google.png" alt="from google" class="img-fluid" width="25" style="margin-left: 6px;"></strong>
-                    <span>One Month Ago</span>
-                    </div>
-                  </div>                  
-                  </div>
-          
-                  <div class="col-12">
-                  <div class="reviews">
-                    <div class="stars" data-percent="100"></div>  
-                  </div>             
-                  </div>
-                </div>
-                </div>   
-              </cite>                
-              </div>            
-            </div>
-          </div>
-
         </div>
-      </div>
-    </section>
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Chief Executive Officer</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Product Manager</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>CTO</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Amanda Jepson</h4>
-                  <span>Accountant</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Team Section -->
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Why do people go to medical spas?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Most people visit medical spas to receive treatments that could improve their appearance. 
-                  Services such as exfoliation could help improve your skin's radiance and glow. 
-                  Visiting a medical spa might help you age gracefully.
-                  Treatments like Botox could reduce the appearance of wrinkles on your face.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What do you wear and bring to a medical spa? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Generally, though, you’ll want to bring something light, comfortable and easy to change out of and store.
-                  <br>
-                  Flip-flops or open-toed sandals work well for shoes. Because you’ll be wearing a robe for most treatments, underwear that feels comfortable is also recommended. 
-                  <br>
-                  Jewelry is one clothing item that’s better to avoid or keep it at home when planning a spa day.                  
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What is the difference between a health spa and a medical spa?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Unlike day spas that focus on improving your outer appearance, medical spas provide medical procedures that are designed to not only improve the appearance but also repair your skin, hair, and even metabolic processes.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Do I need to make an appointment for a procedure at Medi-Mani? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Yes
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Why are med spas growing in popularity? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Patients flock to med spas to receive a different type of care than that which doctors offer in their traditional practices. USA Today reports that, in 2013, med spas represented nearly $2 billion in revenue.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section>
-    <!-- End F.A.Q Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row no-gutters justify-content-center" data-aos="fade-up">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>2375 E Camelback Rd, #600B, Phoenix, AZ 85016</p>
-              </div>
-
-              <div class="email mt-4">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>Contact@azihealth.com</p>
-              </div>
-
-              <div class="phone mt-4">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 866-686-2284</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <a href="index.html"><img src="assets/img/favicon.png" alt="" class="img-fluid mb-3" width="150"></a>
-              <p>
-                2375 E Camelback Rd, #600B, <br>
-                Phoenix, AZ 85016<br><br>
-                <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
-                <strong>Email:</strong> Contact@azihealth.com<br>
-              </p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Services</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Vi-Peel</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">Botox</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="javascript:void(0)">IV-Therapy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Operational Hours</h4>
-    
-            <div class="row mb-2">
-              <div class="col-md-5">
-                <span class="font-weight-bold">Mon - Fri</span>
-              </div>
-    
-              <div class="col-md-7">
-                09:00AM - 05:00PM
-              </div>
-            </div>
-    
-            <div class="row mb-2">
-              <div class="col-md-5">
-                <span class="font-weight-bold">Sat</span>
-              </div>
-    
-              <div class="col-md-7">
-                Closed
-              </div>
-            </div>
-    
-            <div class="row mb-2">
-              <div class="col-md-5">
-                <span class="font-weight-bold">Sun</span>
-              </div>
-    
-              <div class="col-md-7">
-                Closed
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
+    <!-- Alert V2 -->
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>RTPMedicalSolution</span></strong>. All Rights Reserved
-      </div>
-      
+    <!-- Alert V3-->
+    <div class="modal bs-example-modal-lg fade" id="alertv3Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">New Patient Check In</h4>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-success waves-effect waves-light col-12">Continue</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-danger waves-effect waves-light col-12" data-dismiss="modal">Close</button>  
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <section id="step-1" class="section active m-b-40">
+                                <div class="container text-center" id="middleFix">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Select Visit Type</h3>
+                                        <!--Checkbox-->
+                                        <div class="form-group">
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Walk In</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Appointment</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Telemedicine</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Phone Consult</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">No visit</label>  
+                                        </div>
+                                        </div>
+                                        <!--Checkbox-->
+                                </div>
+
+                            </section>
+                        </div>
+
+                        <div class="col-6">
+                            <section id="step-2" class="section active m-b-40">
+                                <div class="container text-center" id="middleFix">
+                                        <h3 class="font-weight-bold h3Spacing text-center">Select Visit Reason</h3>
+                                        <!--Checkbox-->
+                                        <div class="form-group">
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Sick</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Physical</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Allergy test</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">New Patient Sick</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">New Patient Physical</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Med Rifil</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Follow Up</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Fluoride</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Circumcision</label>  
+                                        </div>
+                    
+                                        <div class="form-checkbox">
+                                        <input required class="radio" type="radio" name="" id="" value="">
+                                        <label class="checklabel modifiedRadio" for="">Post E.R/ Urgent care</label>  
+                                        </div>
+                                        </div>
+                                        <!--Checkbox-->
+                                </div>
+                            </section>                            
+                        </div>
+
+                        <div class="col-6">
+                            <section id="step-3" class="section active m-b-40">
+                            <div class="container form-containerV2">
+                                <h3 class="font-weight-bold h3Spacing text-center">Basic Details</h3>
+                                    <form class="floating-labels">
+                                        <!-- first row -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                            <!-- first name -->
+                                            <div class="form-group focused m-b-40">
+                                                <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                <label for="float-label">First Name</label>
+                                            </div>
+                                            <!-- first name -->
+                                            </div>
+                                            <div class="col-lg-12">
+                                            <!-- last name -->
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="">Last Name</label>
+                                            </div>
+                                            <!-- last name -->
+                                            </div>
+                                        </div>
+                                        <!-- first row -->
+                    
+                                        <!-- second row -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group m-b-40">
+                                                    <input type="date" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="col-lg-12">
+                                                <div class="form-group m-b-40">
+                                                    <select class="form-control custom-select"tabindex="1">
+                                                        <option value="">Choose a Gender</option>                                                            
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                        <option value="">Others</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- second row -->
+                    
+                                        <!-- fourth row -->
+                                        <div class="row">
+                                                <div class="form-group m-b-40 col-12">
+                                                    <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                    <label for="">Social Security Number</label>
+                                                </div>
+                                        </div>
+                                        <!-- fourth row -->
+                                    </form>
+                            </div>
+                            </section>                            
+                        </div>
+
+                        <div class="col-6">
+                            <section id="step-4" class="section active m-b-40">
+                            <div class="container form-containerV2">                                
+                                <h3 class="font-weight-bold h3Spacing text-center">Contact Information</h3>
+                                <form class="floating-labels">
+                                <!-- third row -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group m-b-40">
+                                            <input type="tel" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group m-b-40">
+                                            <input type="email" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                            <label for="">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- third row -->
+                                </form>
+                            </div>
+                            </section> 
+                            <section id="step-5" class="section active m-b-40">
+                                <div class="container form-containerV2" style="margin-top: -165px !important;">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Address</h3>
+                                    <form class="floating-labels">
+                                        <!-- fifth row -->
+                                        <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="street">Street</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="city">City</label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <input type="text" class="form-control required" id="" placeholder=""><span class="bar"></span>
+                                                <label for="zip">Zip</label>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="col-lg-12">
+                                            <div class="form-group m-b-40">
+                                                <select class="form-control custom-select"tabindex="1">
+                                                    <option value="">Choose State</option>                                                            
+                                                    <option value="FL">FL</option>
+                                                    <option value="AL">AL</option>
+                                                    <option value="AK">AK</option>
+                                                    <option value="AZ">AZ</option>
+                                                    <option value="AR">AR</option>
+                                                    <option value="CA">CA</option>
+                                                    <option value="CO">CO</option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="DE">DE</option>
+                                                    <option value="GA">GA</option>
+                                                    <option value="HI">HI</option>
+                                                    <option value="ID">ID</option>
+                                                    <option value="IL">IL</option>
+                                                    <option value="IN">IN</option>
+                                                    <option value="IA">IA</option>
+                                                    <option value="KS">KS</option>
+                                                    <option value="KY">KY</option>
+                                                    <option value="ME">ME</option>
+                                                    <option value="MD">MD</option>
+                                                    <option value="MA">MA</option>
+                                                    <option value="MI">MI</option>
+                                                    <option value="MN">MN</option>
+                                                    <option value="MS">MS</option>
+                                                    <option value="MO">MO</option>
+                                                    <option value="MT">MT</option>
+                                                    <option value="NE">NE</option>
+                                                    <option value="NV">NV</option>
+                                                    <option value="NH">NH</option>
+                                                    <option value="NJ">NJ</option>
+                                                    <option value="NM">NM</option>
+                                                    <option value="NY">NY</option>
+                                                    <option value="NC">NC</option>
+                                                    <option value="ND">ND</option>
+                                                    <option value="OH">OH</option>
+                                                    <option value="OK">OK</option>
+                                                    <option value="OR">OR</option>
+                                                    <option value="PA">PA</option>
+                                                    <option value="RI">RI</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SD">SD</option>
+                                                    <option value="TN">TN</option>
+                                                    <option value="TX">TX</option>
+                                                    <option value="UT">UT</option>
+                                                    <option value="VT">VT</option>
+                                                    <option value="VA">VA</option>
+                                                    <option value="WA">WA</option>
+                                                    <option value="WV">WV</option>
+                                                    <option value="WI">WI</option>
+                                                    <option value="WY">WY</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
+                                        <!-- fifth row -->
+                                    </form>
+                                </div>
+                            </section>                             
+                        </div> 
+
+                        <div class="col-12">
+                            <section id="step-6" class="section active m-b-40">
+                                <div class="container form-containerV3">
+                                    <h3 class="font-weight-bold h3Spacing text-center">Custom Demo</h3>
+                                    <div class="row">
+
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                    <label for="float-label">What Country are you from?</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-6" style="margin-top: -20px;">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group" style="margin-bottom: 2px !important;">
+                                                    <p class="boldText">What are you symptoms (check the options below):</p>
+                                                </div> 
+                                            </fieldset>
+                                            <div class="input-group">
+                                                    <div class="row">
+                                                        <div>
+                                                            <input class="input1" type='checkbox' value='3' name='checkbox' id=''/>
+                                                            <label for='checkbox1' class="btn btn-outline-info label2">Option O1</label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="input1" type='checkbox' value='4' name='checkbox' id=''/>
+                                                            <label for='checkbox1' class="btn btn-outline-info label2">Option O2</label>
+                                                        </div>
+                                                    </div>
+                                            </div>                                                
+                                        </div>
+                                        
+                                        <div class="col-6" style="margin-top: -8px;">
+                                                <label class="boldText m-b-20">Rate Your experience:</label>
+                                            <div class="form-group"  style="margin-left: -40px;"> 
+                                                <div class="input-group" style="width: 200% !important;">
+                                                    <ul class="ul1">
+                                                        <fieldset class="floating-labels">
+                                                            <div class="row">
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='1' name='radio' id='radio1'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Very Bad">O1</label>
+                                                                </div>
+            
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='2' name='radio' id='radio2'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Bad">O2</label>
+                                                                </div> 
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='3' name='radio' id='radio3'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Modarate">O3</label>
+                                                                </div> 
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='4' name='radio' id='radio4'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Good">O4</label>
+                                                                </div>   
+                                                                
+                                                                <div class="form-group col-1 m-r-40">
+                                                                    <input class="input1" type='radio' value='5' name='radio' id='radio5'/>
+                                                                    <label for='radio1' class="btn btn-outline-info label1" data-toggle="tooltip" data-placement="top" title="Very Good">O5</label>
+                                                                </div>                                              
+                                                            </div>
+                                                        </fieldset>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                            <div class="form-group"  style="margin-bottom: 2px !important;">
+                                                <p class="boldText">What are you symptoms (check the options below):</p>
+                                            </div> 
+                                            </fieldset>
+                                            <div class="input-group">
+                                                <div class="row">
+                                                    <div>
+                                                        <input class="input1" type='radio' value='1' name='radio' id='radio1'/>
+                                                        <label for='radio1' class="btn btn-outline-info label1">Option O1</label>
+                                                    </div>
+                                                    <div>
+                                                        <input class="input1" type='radio' value='2' name='radio' id='radio2'/>
+                                                        <label for='radio2' class="btn btn-outline-info label1">Option O2</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required" id="filler_name" name="filler_name">
+                                                    <label for="float-label">Provide your Email Address:</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <fieldset class="floating-labels">
+                                                <div class="form-group focused m-b-40">
+                                                    <input type="text" class="form-control required phone-inputmask" id="filler_name" name="filler_name">
+                                                    <label for="float-label">Provide your phone number:</label>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-6" style="margin-top: -20px;">
+                                            <fieldset class="floating-labels">
+                                            <div class="form-group"  style="margin-bottom: 2px !important;">
+                                                <p class="boldText">Put in your Date of Service:</p>
+                                            </div>
+                                            <div class="form-group" style="margin-top: -18px;">
+                                                <input type="date" class="form-control" id=""><span class="bar"></span>
+                                            </div>
+                                            </fieldset>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                                </div>
+                            </section>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer><!-- End Footer -->
-
-  <div class="fl-appt-wrap">
-      <a href="" id="float_book_appt">
-  
-          <div class="fl-appt-fab">
-              <div class="fl-wrap">
-                  <div class="img-fab">
-                      <img src="assets/img/appt.webp" class="lazyload" width="40px" height="40px">
-                  </div>
-              </div>
-          </div>
-      </a>
-      </span>
-      <div class="tooltip">Book Appointment</div>
-  </div>
-
-  <a href="javascript:void(0)" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/rms.js"></script>
-  <script src="assets/js/img-comp.js"></script>
-
+    <!-- Alert V3 -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2020 RTPMedicalSolution.com
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap popper Core JavaScript -->
+    <script src="assets/node_modules/popper/popper.min.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <!--Wave Effects -->
+    <script src="dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="dist/js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!--morris JavaScript -->
+    <script src="assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="assets/node_modules/morrisjs/morris.min.js"></script>
+    <script src="assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Popup message jquery -->
+    <script src="assets/node_modules/toast-master/js/jquery.toast.js"></script>
+    <!-- Chart JS -->
+    <script src="assets/node_modules/toast-master/js/jquery.toast.js"></script>
+    <!--Morris JavaScript -->
+    <script src="assets/node_modules/raphael/raphael-min.js"></script>
+    <script src="assets/node_modules/morrisjs/morris.js"></script>
+    <script src="dist/js/pages/morris-data.js"></script>
+    <script src="assets/node_modules/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/node_modules/gauge/gauge.min.js"></script>
+    <script src="dist/js/pages/widget-data.js"></script>
+    <!-- EASY PIE CHART JS -->
+    <script src="assets/node_modules/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="assets/node_modules/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
 </body>
 
 </html>
